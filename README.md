@@ -11,11 +11,17 @@ any page to go to and be taken there.
 
 Since smartpage isnt on the chrome web store, it must be downloaded and added as a developer extension onto your browser.  
 
-First, enable developer mode in extensions. You can do this by going to [(chrome://extensions/)] and enabling "Developer Mode" in the top right.
+First, enable developer mode in extensions. You can do this by going to [Chrome Extensions](chrome://extensions/) and enabling "Developer Mode" in the top right.
 
 Then, clone the repository in your desired path. 
 
 `git clone https://github.com/katamyra/SmartPage.git`
 
-Head back to [(chrome://extensions/)] and select *Load Unpacked* and choose the SmartPage Folder.
+Head back to [Chrome Extensions](chrome://extensions/) and select *Load Unpacked* and choose the SmartPage Folder.
+
+Now, you will see SmartPage in your list of extensions! Pin it and use freely.
+
+## Todo List
+1) Remember first page when extension window is closed
+2) Check if link is a pdf before changing pages. If not a pdf, open an error popup.
 
