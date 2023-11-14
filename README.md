@@ -22,5 +22,5 @@ Head back to `chrome://extensions/` and select *Load Unpacked* and choose the Sm
 Now, you will see SmartPage in your list of extensions! Pin it and use freely.
 
 ## Todo List
-1) Remember first page when extension window is closed
+1) Remember first page when extension window is closed -- **In Progress**
 
