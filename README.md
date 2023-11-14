@@ -23,5 +23,4 @@ Now, you will see SmartPage in your list of extensions! Pin it and use freely.
 
 ## Todo List
 1) Remember first page when extension window is closed
-2) Check if link is a pdf before changing pages. If not a pdf, open an error popup.
 
