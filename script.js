@@ -25,12 +25,28 @@ function goToPage() {
 
 document.addEventListener('DOMContentLoaded', function() {
     var inputField = document.getElementById("pageNum");
-    var saveButton = document.getElementById("saveButton");
-    //NEED TO ADD ACTUAL SAVING HERE
-    //*! Need to Implement How To Get Saved Value Here! THEN AUTOMATICALLY LOAD IT INTO THE INPUT FIELD.
+    var saveButton = document.getElementById("savebutton");
     saveButton.addEventListener('click', function() {
+        console.log("asdf");
         var inputValue = inputField.value;
-        chrome.storage.sync.set({'savedValue': inputValue})
+        chrome.storage.local.set({'savedValue': inputValue})
     });
 
+});
+/*
+var saveButton = document.getElementById("saveButton");
+var inputField = document.getElementById("pageNum");
+saveButton.addEventListener('click', function() {
+    console.log("asdf");
+    var inputValue = inputField.value;
+    chrome.storage.sync.set({'savedValue': inputValue})
+});
+*/
+
+document.addEventListener('DOMContentLoaded', function() {
+    chrome.storage.local.get(['savedValue'], function(result) {
+        if (result.savedValue) {
+            document.getElementById("pageNum").value = result.savedValue;
+        }
+    });
 });
