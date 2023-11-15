@@ -22,7 +22,9 @@ function goToPage() {
         }  
     }); 
 }
-
+/*
+When save button is clickled, it saves the value of first page locally
+*/
 document.addEventListener('DOMContentLoaded', function() {
     var inputField = document.getElementById("pageNum");
     var saveButton = document.getElementById("savebutton");
@@ -34,15 +36,8 @@ document.addEventListener('DOMContentLoaded', function() {
 
 });
 /*
-var saveButton = document.getElementById("saveButton");
-var inputField = document.getElementById("pageNum");
-saveButton.addEventListener('click', function() {
-    console.log("asdf");
-    var inputValue = inputField.value;
-    chrome.storage.sync.set({'savedValue': inputValue})
-});
+If exists, sets the default value of the first page.
 */
-
 document.addEventListener('DOMContentLoaded', function() {
     chrome.storage.local.get(['savedValue'], function(result) {
         if (result.savedValue) {
