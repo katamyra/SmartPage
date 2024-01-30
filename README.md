@@ -22,6 +22,7 @@ Head back to `chrome://extensions/` and select *Load Unpacked* and choose the Sm
 Now, you will see SmartPage in your list of extensions! Pin it and use freely.
 
 ## Todo List
-1) Error Handling w/ Save Page button  
-2) Editing tab in place rather than creating new tab  
+1) Error Handling w/ Save Page button
+2) Add to actual chrome store  
+3) Editing tab in place rather than creating new tab  
 
